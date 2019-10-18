@@ -125,10 +125,6 @@ const initMap = () => {
 
 const my_map = initMap();
 
-// const locations = () => {
-
-// }
-
 const myLocation = new google.maps.LatLng(60.2055, 24.6559);
 const myLocation2 = new google.maps.LatLng(39.9042, 116.4074);
 const myLocation3 = new google.maps.LatLng(32.7767, -96.7970);
