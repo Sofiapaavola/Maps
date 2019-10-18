@@ -1,6 +1,7 @@
 #map {
-  height: 80%;
-  margin: 4%;
+  height: 400px;
+  width: 900px;
+  margin: 40px auto;
   border: 2px black solid; }
 
 h1 {
