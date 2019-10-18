@@ -7,19 +7,19 @@ const initMap = () => {
   
   initMap();
 
-
-  var myLatlng = new google.maps.LatLng(60.2055, 24.6559);
-var myLatlng2 = new google.maps.LatLng(41.002012, 28.980606);
-var mapOptions = {
+const myLatlng = new google.maps.LatLng(60.2055, 24.6559);
+const myLatlng2 = new google.maps.LatLng(39.9042, 116.4074);
+const myLatlng3 = new google.maps.LatLng(32.7767, 96.7970);
+const mapOptions = {
  zoom: 12,
  center: myLatlng
 }
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-var marker = new google.maps.Marker({
+let map = new google.maps.Map(document.getElementById("map"), mapOptions);
+const marker = new google.maps.Marker({
    position: myLatlng,
    title:"Hello World!"
 });
-var marker2 = new google.maps.Marker({
+const marker2 = new google.maps.Marker({
  position: myLatlng2,
  title:"Hello World!"
 });
