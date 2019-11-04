@@ -11,6 +11,7 @@
  */
 import * as am4core from "@amcharts/amcharts4/core";
 import * as am4maps from "@amcharts/amcharts4/maps";
+import * as am4charts from "@amcharts/amcharts4/charts"
 import am4themes_animated from "@amcharts/amcharts4/themes/animated";
 import am4geodata_worldLow from "@amcharts/amcharts4-geodata/worldLow";
 
@@ -39,7 +40,7 @@ polygonSeries.useGeodata = true;
 // Configure series
 var polygonTemplate = polygonSeries.mapPolygons.template;
 polygonTemplate.tooltipText = "{name}";
-polygonTemplate.fill = am4core.color("#FF6633");
+polygonTemplate.fill = am4core.color("#C38D9E");
 polygonTemplate.stroke = am4core.color("#000033");
 polygonTemplate.strokeWidth = 0.5;
 polygonTemplate.cursorOverStyle = am4core.MouseCursorStyle.pointer;
@@ -59,12 +60,32 @@ chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("#fffff
 var hs = polygonTemplate.states.create("hover");
 hs.properties.fill = chart.colors.getIndex(0).brighten(-0.5);
 
-let animation;
-setTimeout(function(){
-  animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
-}, 3000)
+// let animation;
+// setTimeout(function(){
+//   animation = chart.animate({property:"deltaLongitude", to:100000}, 20000000);
+// }, 3000)
 
 chart.seriesContainer.events.on("down", function(){
  //animation.stop();
 })
+
+// Create first image container
+let imageSeries = chart.series.push(new am4maps.MapImageSeries());
+
+// London properties
+const city1 = imageSeries.mapImages.create();
+// London's latitude/longitude
+city1.latitude = 51.5074;
+city1.longitude = 0.1278;
+// prevent from scaling when zoomed
+city1.nonScaling = true;
+
+// New York City properties
+const city2 = imageSeries.mapImages.create();
+// NY latitude/longitude
+city2.latitude = 40.7128;
+city2.longitude = -74.0060;
+// Prevent scaling when zoomed
+city2.nonScaling = true;
+
 
