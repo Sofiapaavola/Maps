@@ -1,4 +1,7 @@
 # Maps
 
 ## Description
-- A personal project exercise in which the MVP displays the places in which I      have lived and allows the user to navigation through the map.
+A personal project wherein the aim of the minimum viable product is to show an animated timeline of where I have lived throughout my life. The new technologies which are being used is a practice of how to intigrate amCharts with Typescript to create this functionality using the modules and classes provided by the amChart libraries. 
+
+## Current Status 
+Working on getting core functionality set up, after which the animation of planes to travel from points A to B will be created. 
