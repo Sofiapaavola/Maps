@@ -3,11 +3,18 @@
     display: flex; 
     justify-content: space-around;
 
-    #map {
+    // #map {
+    //   height: 500px;
+    //   width: 1000px;
+    //   border: 2px $theme-color-four solid; 
+    //   border-radius: 2px;
+    // }
+    
+    #chartdiv {
+      width: 100%;
       height: 500px;
-      width: 1000px;
-      border: 2px $theme-color-four solid; 
-      border-radius: 2px;
+    max-width:100%;
+      background-color:#000033;
     }
 
     .buttons { 

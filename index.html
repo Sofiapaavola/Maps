@@ -7,12 +7,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="dist/main.css">
-        <script src="https://d3js.org/d3.v3.js"></script>
-        <script src="https://unpkg.com/topojson@3"></script>
-        <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVF0MR-UK7X5IRbYzxSLM6B921NbZoFnM" ></script>
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        <!-- <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVF0MR-UK7X5IRbYzxSLM6B921NbZoFnM" ></script> -->
         <script async defer src="dist/main.js"></script>
     </head>
     <body>
+        
         <header></header>
         <section class="map-and-buttons"> 
             <div class="buttons"> 
@@ -25,7 +28,8 @@
                 <button id="budapestButton">Budapest</button>
                 <button id="londonButton">London</button>
             </div> 
-            <div id="map"></div>
+            <!-- <div id="map"></div> -->
+            <div id="chartdiv"></div>
         </section>
     </body>
 </html>
