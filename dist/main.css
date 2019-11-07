@@ -47,6 +47,8 @@ table {
 
 header {
   height: 50px; }
+  header h1 {
+    font: "Blackout", cursive; }
 
 .map-and-buttons {
   display: flex;
