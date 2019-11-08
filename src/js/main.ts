@@ -79,14 +79,14 @@ function addCity(coords, title) {
     return city;
 }
 
-let helsinki = addCity({ "latitude": 60.1699, "longitude": 24.9384 }, "Helsinki");
-let beijing = addCity({ "latitude": 39.9042, "longitude": 116.4074 }, "Beijing");
-let dallas = addCity({ "latitude": 32.7767, "longitude": -96.7970 }, "Dallas");
-let munich = addCity({ "latitude": 48.1351, "longitude": 11.5820 }, "Munich");
-let singapore = addCity({ "latitude": 1.3521, "longitude": 103.8198 }, "Singapore");
-let madrid = addCity({ "latitude": 40.4168, "longitude": -3.7038 }, "Madrid");
-let budapest = addCity({ "latitude": 47.4979, "longitude": 19.0402 }, "Budapest");
-let london = addCity({ "latitude": 51.5074, "longitude": -0.1278 }, "London");
+let helsinki = addCity({ "latitude": 60.1699, "longitude": 24.9384 }, "Helsinki 1995-2001");
+let beijing = addCity({ "latitude": 39.9042, "longitude": 116.4074 }, "Beijing 2001-2003");
+let dallas = addCity({ "latitude": 32.7767, "longitude": -96.7970 }, "Dallas 2003-2007");
+let munich = addCity({ "latitude": 48.1351, "longitude": 11.5820 }, "Munich 2007-2009");
+let singapore = addCity({ "latitude": 1.3521, "longitude": 103.8198 }, "Singapore 2009-2014");
+let madrid = addCity({ "latitude": 40.4168, "longitude": -3.7038 }, "Madrid 2014-2018");
+let budapest = addCity({ "latitude": 47.4979, "longitude": 19.0402 }, "Budapest 2018");
+let london = addCity({ "latitude": 51.5074, "longitude": -0.1278 }, "London 2018-now");
 
 // Add lines
 let lineSeries = chart.series.push(new am4maps.MapArcSeries());
