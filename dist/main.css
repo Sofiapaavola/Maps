@@ -50,39 +50,22 @@ header {
   header h1 {
     font: "Blackout", cursive; }
 
-.map-and-buttons {
-  display: flex;
-  justify-content: space-around; }
-  .map-and-buttons #chartdiv {
-    width: 100%;
-    height: 500px;
-    max-width: 100%;
-    background-color: #000033; }
-  .map-and-buttons .buttons {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
-    .map-and-buttons .buttons button {
-      box-shadow: inset 0px 1px 0px 0px #EE8484;
-      background-color: #E27D60;
-      border-radius: 2px;
-      border: 1px solid #EE8484;
-      display: inline-block;
-      cursor: pointer;
-      color: #ffffff;
-      padding: 6px 24px;
-      text-decoration: none;
-      height: 40px; }
-      .map-and-buttons .buttons button:hover {
-        background-color: #d87a60; }
-      .map-and-buttons .buttons button:active {
-        position: relative;
-        top: 1px; }
+header {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px; }
+  header h1 {
+    color: white; }
+
+section #chartdiv {
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  background-color: #000033; }
 
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #EE8484;
+  background-color: #000033;
   background-size: 100%; }
